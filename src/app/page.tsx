@@ -1,3 +1,4 @@
+import { FeatureCard } from "@/components/FeatureCard";
 import { Play } from "react-feather";
 
 export default function Home() {
@@ -44,15 +45,15 @@ export default function Home() {
         </div>
 
         <div className="text-center p-4 my-20">
-          <h2 className="text-3xl font-bold">How it works?</h2>
+          <h2>How it works?</h2>
           <p className="text-lg">Knoe more about our project</p>
         </div>
       </div>
 
       {/* Steps section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-5 gap-20 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-5 gap-16 p-6">
         <div className="md:row-span-2">
-          <div className="flex items-center justigy-start gap-4">
+          <div className="flex items-center justify-start gap-4">
             <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
               1
             </div>
@@ -62,7 +63,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:row-span-2 md:col-start-2 row-start-2">
-          <div className="flex items-center justigy-end gap-4">
+          <div className="flex items-center justify-end gap-4">
             <div className="text-right">
               <p>Connect with your coummnity and make</p>
             </div>
@@ -72,7 +73,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:row-span-2 row-start-3">
-          <div className="flex items-center justigy-start gap-4">
+          <div className="flex items-center justify-start gap-4">
             <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
               1
             </div>
@@ -82,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         <div className="md:row-span-2 md:col-start-2 row-start-4">
-          <div className="flex items-center justigy-end gap-4">
+          <div className="flex items-center justify-end gap-4">
             <div className="text-right">
               <p>Connect with your coummnity and make</p>
             </div>
@@ -90,6 +91,47 @@ export default function Home() {
               1
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Feature cards section */}
+      <div className="grid grid-cols-1 gap-y-10 p-6">
+        <FeatureCard 
+          title="Deck of choices" 
+          description="Create a deck of up to 50 chiuces for your poll." 
+        />
+
+        <FeatureCard 
+          title="Duration"
+          description="Decide the time duration to close the pre-poll."
+        />
+
+        <FeatureCard 
+          title="Poll creation"
+          description="Create a Twitch channel poll from here. With your winner choices."
+        />
+
+        <FeatureCard 
+          title="Real-time votation"
+          description="See what's your audience choosing."
+        />
+
+        <FeatureCard 
+          title="Share"
+          description="Bring your audience the facility to access through QR Code or Session Code to start."
+        />
+      </div>
+
+      <div className="px-6 pb-20">
+        <div className="text-center my-20">
+          <h2>Demostration</h2>
+          <p className="text-lg">Know more about our project</p>
+        </div>
+
+        <div className="bg-dark rounded-3xl aspect-video w-full h-52 my-10"></div>
+
+        <div className="py-20 text-center">
+          <p>Some documentaton about this project</p>
         </div>
       </div>
     </main>
