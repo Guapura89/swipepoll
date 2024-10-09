@@ -50,43 +50,43 @@ export default function Home() {
       </div>
 
       {/* Steps section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-5 gap-5 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-5 gap-20 p-6">
         <div className="md:row-span-2">
           <div className="flex items-center justigy-start gap-4">
-            <div className="bg-accent text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
               1
             </div>
-            <div>
+            <div className="text-left">
               <p>Connect with your coummnity and make</p>
             </div>
           </div>
         </div>
         <div className="md:row-span-2 md:col-start-2 row-start-2">
           <div className="flex items-center justigy-end gap-4">
-            <div>
+            <div className="text-right">
               <p>Connect with your coummnity and make</p>
             </div>
-            <div className="bg-accent text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
               1
             </div>
           </div>
         </div>
         <div className="md:row-span-2 row-start-3">
           <div className="flex items-center justigy-start gap-4">
-            <div className="bg-accent text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
               1
             </div>
-            <div>
+            <div className="text-left">
               <p>Connect with your coummnity and make</p>
             </div>
           </div>
         </div>
         <div className="md:row-span-2 md:col-start-2 row-start-4">
           <div className="flex items-center justigy-end gap-4">
-            <div>
+            <div className="text-right">
               <p>Connect with your coummnity and make</p>
             </div>
-            <div className="bg-accent text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
               1
             </div>
           </div>
