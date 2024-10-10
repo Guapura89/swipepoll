@@ -1,5 +1,7 @@
+import { ContactForm } from "@/components/ContactForm";
 import { FeatureCard } from "@/components/FeatureCard";
-import { Play } from "react-feather";
+import { LinkCard } from "@/components/LinkCard";
+import { Play, GitHub, FileText, BookOpen, Sun, Linkedin, Mail } from "react-feather";
 
 export default function Home() {
   return (
@@ -122,7 +124,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="px-6 pb-20">
+      <div className="px-6 pb-10">
         <div className="text-center my-20">
           <h2>Demostration</h2>
           <p className="text-lg">Know more about our project</p>
@@ -132,6 +134,91 @@ export default function Home() {
 
         <div className="py-20 text-center">
           <p>Some documentaton about this project</p>
+        </div>
+      </div>
+      {/* Link cards section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 p-6">
+        <LinkCard 
+          title="Github"
+          description="Our repository"
+          url="/"
+          icon={<GitHub size={50} />}
+        />
+
+        <LinkCard 
+          title="One pager"
+          description="Take a look"
+          url="/"
+          icon={<FileText size={50} />}
+        />
+
+        <LinkCard 
+          title="Branding"
+          description="Our brand book"
+          url="/"
+          icon={<BookOpen size={50} />}
+        />
+
+        <LinkCard 
+          title="Figma"
+          description="See the design"
+          url="/"
+          icon={<Sun size={50} />}
+        />
+      </div>
+
+
+      {/* About us section */}
+      <div className="flex flex-col justify-center mt-20 p-6 gap-y-10">
+        <div className="text-center">
+          <h1>About us</h1>
+          <p>Who's behind this project</p>
+        </div>
+
+        <div className="flex flex-col gap-10 text-center my-10">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat tempore totam suscipit nulla soluta ab sequi ratione omnis incidunt quaerat.</p>
+
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum itaque magnam quibusdam nam esse modi porro incidunt unde dolorum aliquam.</p>
+        </div>
+
+        <div className="grid grid-cols-2 place-items-center">
+          <div className="flex flex-col items-center gap-5">
+            <div className="avatar avatar-xl">
+              <img src="https://i.pravatar.cc/150?u=a042581f4e29026024d" alt="avatar" />
+            </div>
+            <p className="font-semibold">Angel Lopez</p>
+
+            <ul className="flex gap-4 items-center justify-center">
+              <li><a href=""><GitHub /></a></li>
+              <li><a href=""><Linkedin /></a></li>
+              <li><a href=""><Mail /></a></li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col items-center gap-5">
+            <div className="avatar avatar-xl">
+              <img src="https://i.pravatar.cc/150?u=a042581f4e29026024d" alt="avatar" />
+            </div>
+            <p className="font-semibold">Carlos Sanchez</p>
+
+            <ul className="flex gap-4 items-center justify-center">
+              <li><a href=""><GitHub /></a></li>
+              <li><a href=""><Linkedin /></a></li>
+              <li><a href=""><Mail /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact section */}
+      <div className="flex flex-col justify-center mt-20 p-6 gap-y-10 bg-dark dark:bg-light text-white dark:text-dark">
+        <div className="text-center">
+          <h1>Contact us</h1>
+          <p>Get in touch with us</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <ContactForm />
         </div>
       </div>
     </main>
