@@ -1,15 +1,18 @@
 const PollCard = () => {
   return (
-    <div className={"bg-gray-800 flex-grow p-8 rounded-lg shadow-md"}>
-      <p className={"text-gray-500"}>Games</p>
-      <h3 className={"text-xl font-bold my-3"}>What game should we play?</h3>
-      <div className={"flex"}>
-        <div className={"bg-secondary py-1 px-4 rounded-full"}>
-          388 votes
+    <div className="card">
+      <div className="card-body">
+        <p className={"text-gray-300 font-light"}>Games</p>
+        <h2 className="card-header text-xl font-bold">
+          What game should we play?
+        </h2>
+        <div className="card-footer">
+          <span className="badge badge-secondary py-1 px-4">388 votes</span>
         </div>
       </div>
     </div>
-  );
-}
+  )
+    ;
+};
 
 export default PollCard;

@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     unoptimized: false,
-    domains: ["img.clerk.com"],
+    domains: ["img.clerk.com", "https://img.clerk.com/"],
   },
 };
 
