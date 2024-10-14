@@ -1,7 +1,8 @@
 import { ContactForm } from "@/components/ContactForm";
 import { FeatureCard } from "@/components/FeatureCard";
+import { Footer } from "@/components/Footer";
 import { LinkCard } from "@/components/LinkCard";
-import { Play, GitHub, FileText, BookOpen, Sun, Linkedin, Mail } from "react-feather";
+import { Play, GitHub, FileText, BookOpen, Sun, Linkedin, Mail, ArrowUp } from "react-feather";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
         </div>
 
         <div className="text-center p-4 my-20">
-          <h2>How it works?</h2>
+          <h2 id="how-it-works">How it works?</h2>
           <p className="text-lg">Knoe more about our project</p>
         </div>
       </div>
@@ -56,7 +57,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-5 gap-16 p-6">
         <div className="md:row-span-2">
           <div className="flex items-center justify-start gap-4">
-            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center aspect-square">
               1
             </div>
             <div className="text-left">
@@ -69,14 +70,14 @@ export default function Home() {
             <div className="text-right">
               <p>Connect with your coummnity and make</p>
             </div>
-            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center aspect-square">
               1
             </div>
           </div>
         </div>
         <div className="md:row-span-2 row-start-3">
           <div className="flex items-center justify-start gap-4">
-            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center aspect-square">
               1
             </div>
             <div className="text-left">
@@ -89,7 +90,7 @@ export default function Home() {
             <div className="text-right">
               <p>Connect with your coummnity and make</p>
             </div>
-            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-primary text-white font-bold w-12 h-12 rounded-full flex items-center justify-center aspect-square">
               1
             </div>
           </div>
@@ -221,6 +222,18 @@ export default function Home() {
           <ContactForm />
         </div>
       </div>
+
+      <div className="w-full flex flex-col justify-center items-center py-20 px-6 text-center gap-y-10">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam consectetur mollitia neque expedita</p>
+
+        {/* <button className="rounded-full p-4 h-16 w-16 bg-primary grid place-items-center text-white">
+          <ArrowUp size={28} />
+        </button>
+
+        <span className="font-bold">Back to top</span> */}
+      </div>
+
+      <Footer />
     </main>
   );
 }

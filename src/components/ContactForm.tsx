@@ -8,24 +8,24 @@ export const ContactForm = () => {
           <label className="form-label">Email</label>
 
           <input
-            placeholder="Type here"
+            placeholder="Enter your email here..."
             type="email"
-            className="input max-w-full rounded-full"
+            className="p-2 bg-gray-500 outline-none text-white max-w-full rounded-full"
           />
         </div>
         <div className="form-field">
           <label className="form-label">Subject</label>
 
           <input
-            placeholder="Type here"
+            placeholder="Enter the subject here..."
             type="text"
-            className="input max-w-full rounded-full"
+            className="p-2 bg-gray-500 outline-none text-white max-w-full rounded-full"
           />
         </div>
         <div className="form-field">
           <label className="form-label">Message</label>
 
-          <textarea className="textarea max-w-full" placeholder="Message" rows={8}></textarea>
+          <textarea className="p-2 bg-gray-500 outline-none max-w-full rounded-2xl" placeholder="Enter the message here.." rows={5}></textarea>
         </div>
         <div className="form-field pt-5">
           <div className="form-control justify-center">
