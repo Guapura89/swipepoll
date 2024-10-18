@@ -91,6 +91,10 @@ const config: Config = {
           fontSize: theme("fontSize.lg"),
           fontWeight: theme("fontWeight.bold"),
         },
+        h4: {
+          fontSize: theme("fontSize.md"),
+          fontWeight: theme("fontWeight.bold")
+        }
       });
     }),
   ],

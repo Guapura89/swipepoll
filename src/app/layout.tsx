@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html suppressHydrationWarning lang="en">
+      <html suppressHydrationWarning lang="en" className="scroll-smooth">
       <body>
       {children}
       </body>

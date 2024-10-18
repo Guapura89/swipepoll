@@ -7,7 +7,7 @@ import Logo from "@/assets/brand/swipepoll_horizontal.png";
 export const NavBar = () => {
   const links = ['Home', 'How it works?', 'About us', 'Contact us'];
   return(
-    <header className="w-full lg:w-4/5 mx-auto flex items-center justify-between pt-4 h-32 p-4 text-black">
+    <header id="header" className="w-full lg:w-4/5 mx-auto flex items-center justify-between pt-4 h-32 p-4 text-black">
       <div>
         <h1 className="text-4xl font-bold">
           <a href="/">
@@ -19,7 +19,7 @@ export const NavBar = () => {
       <div className="hidden md:flex gap-4 items-center">
         <ul className="flex items-center gap-4">
           {
-            [["Home", "/"], ["How it works?", "/"], ["About us", "/"], ["Contact us", "/"]].map(([item, link], i) =>
+            [["Home", "/"], ["How it works?", "#how-it-works"], ["About us", "#about-us"], ["Contact us", "#contact-us"]].map(([item, link], i) =>
               <li key={`link-${i}`}>
                 <a href={link} className="hover:opacity-50 text-lg font-bold hover:cursor-pointer transition-all duration-200 ease-linear">
                   {item}
