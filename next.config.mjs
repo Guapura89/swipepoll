@@ -2,7 +2,15 @@
 const nextConfig = {
   images: {
     unoptimized: false,
-    domains: ["img.clerk.com", "https://img.clerk.com/"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.clerk.com",
+      },
+      {
+        hostname: "img.clerk.com",
+      }
+    ]
   },
 };
 
